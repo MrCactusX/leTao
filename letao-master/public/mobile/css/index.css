@@ -1,0 +1,90 @@
+.mui-slider 
+.mui-slider-group .mui-slider-item a img{
+    width: 100%;
+}
+.lt_c{
+    width: 100%;
+    padding: 0 10px 10px 10px;
+}
+.lt_nav{
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.lt_nav ul{
+    overflow: hidden;
+}
+.lt_nav ul li{
+    float: left;
+    width: 33.33%;
+}
+.lt_sale{
+    width: 100%;
+    overflow: hidden;
+}
+.lt_sale .lt_sale_left{
+    float: left;
+    width: 70%;
+}
+.lt_sale_left p{
+    overflow: hidden;
+    margin: 0px;
+}
+.lt_sale_left a{
+    float: left;
+    width: 50%;
+}
+.lt_sale_left a img{
+    height: 200px;
+}
+.lt_sale_right{
+    float: right;
+    width: 30%;
+}
+.lt_sale_right a img{
+    height: 400px;
+}
+.lt_brand{
+    width: 100%;
+}
+.lt_brand .lt_brand_list li{
+    float: left;
+    width: 25%;
+    padding: 10px 0;
+}
+.lt_product{
+    width: 100%;
+}
+
+.productBox ul{
+    overflow: hidden;
+    padding: 5px 5px;
+}
+.productBox li{
+    margin-top: 15px;
+    width: 48%;
+    float: left;
+    box-shadow: 0px 0px 3px 3px #ccc;
+    text-align: center;
+}
+.productBox li p{
+    font-size: 12px;
+}
+.productBox li:nth-child(2n+2){
+    float: right;
+}
+.productBox li p.title{
+    padding: 0 10px;
+    height: 64px;
+    overflow: hidden;
+}
+.productBox li p i{
+    font-style: normal;
+}
+.productBox li p .lt_orange{
+    color: orange;
+}
+.productBox p.buy button{
+    background-color: #006699;
+    color: #fff;
+}

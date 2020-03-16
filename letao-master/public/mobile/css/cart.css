@@ -1,0 +1,303 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: Mr.Cactus
+ * @Date: 2020-02-20 10:20:26
+ * @LastEditors: Mr.Cactus
+ * @LastEditTime: 2020-02-21 18:08:21
+ */
+.lt_container .lt_mannage {
+    bottom: 55px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 998;
+}
+.lt_container .updata {
+    bottom: 55px;
+    height: 0px;
+    background-color: #fff;
+    z-index: 999;
+}
+.lt_header h3 a{
+    width: auto;
+    position: relative;
+}
+.lt_header h3 a span{
+    font-size: 12px;
+}
+.header_gl{
+    font-size: 14px;
+}
+.lt_container .lt_content{
+    padding-bottom: 95px;
+    background-color: #eae9e9;
+}
+.lt_content .lt_productList{
+    padding: 10px;
+}
+.lt_productList li{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.lt_productList li .pic_box{
+    width: 30%;
+}
+.lt_productList li .pic_box img{
+    width: 100%;
+}
+.lt_productList li .list{
+    overflow: hidden;
+    position: relative;
+
+}
+.lt_productList .pic_box,
+.lt_productList .detail_box{
+    float: left;
+}
+.lt_productList .detail_box{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 70%;
+    padding-left: 20px;
+}
+.detail_box .title{
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.setting button{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #eae9e9;
+}
+.detail_box .option{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.detail_box .option .price{
+    float: left;
+    color: #f44336;
+}
+.detail_box .option .lt_num{
+    float: right;
+}
+.lt_num button{
+    float: left;
+    padding: 0;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 0;
+    background-color: #eae9e9;
+}
+.lt_num input{
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin: 0;
+    padding: 0 5px;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    font-size: 12px;
+    text-align: center;
+}
+.lt_container .lt_mannage{
+    padding: 0 10px;
+    line-height: 40px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.lt_mannage input{
+    vertical-align: middle;
+}
+.lt_mannage button{
+    vertical-align: middle;
+}
+.lt_mannage .mannage_left{
+    float: left;
+}
+.lt_mannage .mannage_right{
+    float: right;
+}
+.mui-checkbox input[type=checkbox], 
+.mui-radio input[type=radio]{
+    width: 22px;
+    height: 22px;
+    top: 0;
+}
+.mui-checkbox input[type=checkbox]:before, 
+.mui-radio input[type=radio]:before{
+    font-size: 22px;
+    
+}
+.mui-checkbox input[type=checkbox]:checked:before, 
+.mui-radio input[type=radio]:checked:before{
+    color: #006699;
+}
+.mui-checkbox.mui-left{
+    height: 22px;
+}
+.mui-checkbox.mui-left input[type=checkbox], 
+.mui-radio.mui-left input[type=radio]{
+    display: block;
+    left: 0px;
+}
+.lt_mannage .mui-checkbox{
+    height: 40px;
+}
+.lt_mannage .mui-checkbox input[type=checkbox]{
+    height: 40px;
+    line-height: 40px;
+}
+.lt_mannage .mui-checkbox.mui-left label, 
+.lt_mannage .mui-radio.mui-left label{
+    padding-left: 25px;
+}
+.lt_mannage .mannage_right a{
+    color: #f44336;
+}
+.lt_mannage .mannage_right button{
+    background-color: #006699;
+    border-radius: 15px;
+    border: none;
+}
+.lt_mannage .mannage_right button,
+.lt_mannage .mannage_right button a{
+    color: #fff;
+}
+.lt_mannage .totalPrice{
+    font-size: 14px;
+    font-weight: 600;
+}
+.lt_container .up{
+    animation: up 1s forwards;
+}
+.lt_container .down{
+    animation: down 1s forwards;
+}
+@keyframes up{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 500px;
+    }
+}
+@keyframes down{
+    from{
+        height: 500px;
+    }
+    to{
+        height: 0;
+        display: none;
+    }
+}
+.updata .lt_content{
+    padding:0 0 50px 0;
+    background-color: #fff;
+}
+.updata .lt_content .mui-scroll{
+    padding: 10px;
+}
+.lt_price,.lt_size,.lt_num{
+    font-size: 12px;
+}
+.num_sy .sy{
+    padding: 0;
+    margin: 0;
+}
+.lt_price .price{
+    color: #f44336;
+    font-size: 20px;
+}
+.lt_price s{
+    margin-left: 10px;
+    color: #ccc;
+}
+.lt_size{
+    overflow: hidden;
+}
+.lt_size p{
+    margin-bottom: 0;
+}
+.lt_size span{
+    float: left;
+}
+.lt_size ul{
+    overflow: hidden;
+    float: left;
+}
+.lt_size ul li{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.lt_size ul li.active{
+    background-color: #f35906;
+    color: #fff;
+}
+.lt_num{
+    overflow: hidden;
+}
+
+.updata .f_line{
+    width: 100%;
+    overflow: hidden;
+}
+.f_line .pic{
+    width: 30%;
+    float: left;
+}
+.f_line .pic img{
+    width: 100%;
+}
+.f_line .info{
+    padding-left: 20px;
+    width: 70%;
+    float: left;
+    padding-top: 10%;
+}
+.updata .select{
+    font-size: 12px;
+}
+.updata .foot{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eae9e9;
+    bottom: 0;
+    top: 90%;
+    text-align: center;
+    overflow: hidden;
+}
+.foot>div{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.foot button{
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+.foot button.btn_yes{
+    background-color: #006699;
+    color: #fff;
+}

@@ -1,0 +1,45 @@
+.lt_product{
+    width: 100%;
+}
+.lt_product .productTitle{
+    background-color: #eaeaea;
+    height: 35px;
+    line-height: 35px;
+}
+.productTitle li{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.productTitle li.active a{
+    color: orange;
+}
+
+.productBox ul{
+    overflow: hidden;
+    padding: 5px 5px;
+}
+.productBox li{
+    margin-top: 15px;
+    width: 48%;
+    float: left;
+    box-shadow: 0px 0px 3px 3px #ccc;
+    text-align: center;
+}
+.productBox li p{
+    font-size: 12px;
+}
+.productBox li:nth-child(2n+2){
+    float: right;
+}
+.productBox li p.title{
+    padding: 0 10px;
+    height: 64px;
+    overflow: hidden;
+}
+.productBox li p i{
+    font-style: normal;
+}
+.productBox li p .lt_orange{
+    color: orange;
+}

@@ -1,0 +1,118 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: Mr.Cactus
+ * @Date: 2020-02-17 09:59:29
+ * @LastEditors: Mr.Cactus
+ * @LastEditTime: 2020-02-19 21:11:14
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 在ios中运行是否创建快捷启动方式 -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!-- 在ios设置顶部通知栏的样式 黑色 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!-- 遇到数字不转化为电话号码的格式 -->
+    <meta content="telephone=no" name="format-detection">
+    <!-- 项目描述 -->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords"
+        content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./res/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./res/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <title>乐淘-分类</title>
+</head>
+
+<body>
+    <div class="lt_container">
+        <div class="lt_header">
+            <a href="javascript:history.back()">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+            <h3>详情</h3>
+        </div>
+        <div class="lt_content">
+            <div class="lt_wrapper">
+                <div class="mui-scroll-wrapper clearfix">
+                    <div class="mui-scroll">
+                        <!-- 模板引擎 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lt_footer clearfix">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <div class="foot_btn right">
+                <button class="join_cart">加入购物车</button>
+                <button class="join_buy">立即购买</button>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/template" id="detail">
+            <div class="lt_banner">
+                <div class="mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                            src="{{list.pic[list.pic.length-1].picAddr}}" /></a>
+                        </div>
+                        {{each list.pic as value i}}
+                        <div class="mui-slider-item">
+                            <a href="#"><img src="{{value.picAddr}}" /></a>
+                        </div>
+                        {{/each}}
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                            src="{{list.pic[0].picAddr}}" /></a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        {{each list.length as value i}}
+                            <div class="mui-indicator {{if i==0}}mui-active{{/if}}"></div>
+                        {{/each}}                      
+                    </div>
+                </div>
+            </div>
+            <div class="lt_title">
+                {{list.proName}}
+            </div>
+            <div class="lt_price">
+                <span>价格：</span>
+                <span class="price">&yen;{{list.price}}</span>
+                <s>&yen;{{list.oldPrice}}</s>
+            </div>
+            <div class="lt_size">
+                <span>尺码：</span>
+                <ul class="clearfix">
+                    {{each list.size as value i}}
+                        <li>{{value}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="lt_num">
+                <span>数量：</span>
+                <div>
+                    <button class="num_jian">-</button>
+                    <input type="text" class="num" value="0">
+                    <button class="num_add">+</button>
+                    <span class="num_sy">
+                        剩余数量：
+                        <a href="#" class="sy">{{list.num}}</a>
+                    </span>
+                </div>
+            </div>
+        </script>
+    <script src="./res/mui/js/mui.min.js"></script>
+    <script src="./res/zepto/zepto.min.js"></script>
+    <script src="./res/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/detail.js"></script>
+</body>
+
+</html>
